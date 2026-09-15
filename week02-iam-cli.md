@@ -155,13 +155,22 @@ requirements instead of granting broad access simply because it resolves an erro
 
 ## Professional Vocabulary
 **Authentication:** The process of proving who a user or system is, usually through credentials.
+
 **Authorization:** The process of determining what an authenticated identity is allowed to do.
+
 **IAM:** AWS Identity and Access Management, the service used to control identities, roles, policies, and permissions.
+
 **Policy:** A set of permission rules that defines which AWS actions are allowed or denied.
+
 **Least Privilege:** The security principle of granting only the permissions required to perform a job.
+
 **AccessDenied:** An AWS response indicating that the current user is not authorized to perform the requested action.
+
 **AWS CLI:** The AWS Command Line Interface, which allows AWS services to be investigated and changed using commands.
+
 **CloudShell:** A browser-based AWS shell environment.
+
 **Caller Identity:** The AWS account and identity making an API request.
+
 **Resource Scope:** The specific AWS resources to which a permission applies.
 
