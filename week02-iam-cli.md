@@ -52,8 +52,10 @@ I ran:
 aws sts get-caller-identity
 ```
 Relevant output: 
+```text
 Account: [REDACTED]
 Arn: arn:aws:sts::[REDACTED]:assumed-role/voclabs/[REDACTED]
+```
 
 This confirmed that the CLI was authenticated to the Learner Lab account through an assumed voclabs role.
 It established the caller identity, but not the full set of permissions available to that identity.
@@ -63,10 +65,12 @@ I then ran:
 aws iam get-role --role-name LabRole
 ```
 Relevant output: 
+```text
 RoleName: LabRole
 Action: sts:AssumeRole
 MaxSessionDuration: 3600
 RoleLastUsed Region: us-east-1
+```
 
 The AssumeRolePolicyDocument also listed multiple AWS service principals. This shows the trust relationship for LabRole and
 identifies who or what may assume it. It does not define the role's actual permission set.
@@ -76,11 +80,13 @@ Next, I ran:
 aws iam list-attached-role-policies --role-name LabRole
 ```
 Relevant output: 
+```text
 AmazonSSMManagedInstanceCore
 AmazonEKSClusterPolicy
 AmazonEC2ContainerRegistryReadOnly
 AmazonEKSWorkerNodePolicy
 3 Learner Lab VocLabPolicy policies
+```
 
 The command returned seven attached managed policies. 
 
@@ -89,8 +95,11 @@ I then ran:
 aws iam list-role-policies --role-name LabRole
 ```
 Relevant output: 
-"PolicyNames": []
-
+```json
+{
+  "PolicyNames": []
+}
+```
 This shows that LabRole has attached managed policies but no inline policies.
 
 I compared the CLI evidence with the IAM console. The console also showed seven
