@@ -6,6 +6,7 @@ This repository contains weekly cloud operations investigation notes, evidence, 
 
 - [Week 1: Cloud Operations Onboarding](week01-cloud-operations-onboarding.md)
 - [Week 2: IAM and AWS CLI Investigation](week02-iam-cli.md)
+- [Week 3 - Systems Manager and S3](week03-systems-manager-s3.md)
 
 ## Purpose
 
