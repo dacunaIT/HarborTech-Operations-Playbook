@@ -10,6 +10,7 @@ This repository contains weekly cloud operations investigation notes, evidence, 
 - [Week 4 - EC2 Web Server Troubleshooting and Lifecycle Validation](week04-ec2.md)
 - [Week 5: Scaling, Load Balancing, and DNS](week05-scaling-dns.md)
 - [Week 6: Containers and Serverless Computing](week06-containers-serverless.md)
+- [Week 7: Managed Database Services](week07-database-services.md)
 
 ## Purpose
 
