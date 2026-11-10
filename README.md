@@ -12,6 +12,7 @@ This repository contains weekly cloud operations investigation notes, evidence, 
 - [Week 6: Containers and Serverless Computing](week06-containers-serverless.md)
 - [Week 7: Managed Database Services](week07-database-services.md)
 - [Week 9: VPC Networking and Troubleshooting](week09-vpc-networking.md)
+- [Week 10 - Storage, Backup, and Archiving](week10-storage-archiving.md)
 
 ## Purpose
 
